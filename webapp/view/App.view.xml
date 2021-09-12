@@ -1,0 +1,32 @@
+<mvc:View
+    controllerName="com.sfc.databind.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <Panel headerText="Element binding">
+                            <Input  id="inputName"/>	
+                        </Panel>
+                        <Panel headerText="Property binding">
+                                <VBox>
+                                    <HBox class="sapUiSmallMarginBottom">
+                                        <Button id="buttonDisplay" text="조회" visible="{oProPerty>/readMode}" press=".onButtonPress('display')"/>
+                                        <Button id="buttonEdit" text="수정" visible="{oProPerty>/editMode}" press=".onButtonPress('edit')" class="sapUiTinyMarginBegin"/>
+                                        <Button id="buttonSave" text="저장" visible="{oProPerty>/saveMode}" class="sapUiTinyMarginBegin"/>
+                                        <Button id="buttonDelete" text="삭제" visible="{oProPerty>/deleteMode}" class="sapUiTinyMarginBegin"/>
+                                    </HBox>
+                                    <Button id="onButtonPress" text="초기화" press=".onButtonPress"/>
+                                
+                                </VBox>
+                        </Panel>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
