@@ -50,14 +50,14 @@ sap.ui.define([
                                     deleteMode : false
                                 });
 
-                this.setModel(oProPerty, "oproPerty"); //  "oProPerty"  이름으로 Model을  등록 합니다.
+                this.setModel(oProPerty, "oProPerty"); //  "oProPerty"  이름으로 Model을  등록 합니다.
             },
 
             onButtonPress(arg){
 
                 sap.m.MessageToast.show(arg);
 
-                var oProPerty = this.getModel("oproPerty");
+                var oProPerty = this.getModel("oProPerty");
 
                 this._buttonInit(oProPerty);
 

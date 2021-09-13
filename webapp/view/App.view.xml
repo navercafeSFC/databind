@@ -16,16 +16,16 @@
                                 <VBox>
                                     <HBox class="sapUiSmallMarginBottom">
                                         <HBox width="4em">
-                                             <Button id="buttonDisplay" text="Display" visible="{oproPerty>/readMode}" press=".onButtonPress('display')"/>
+                                             <Button id="buttonDisplay" text="Display" visible="{oProPerty>/readMode}" press=".onButtonPress('display')"/>
                                         </HBox>
                                         <HBox width="4em" class="sapUiTinyMarginBegin">
-                                            <Button id="buttonEdit" text="Edit" visible="{oproPerty>/editMode}" press=".onButtonPress('edit')"/>
+                                            <Button id="buttonEdit" text="Edit" visible="{oProPerty>/editMode}" press=".onButtonPress('edit')"/>
                                         </HBox>
                                         <HBox width="4em" class="sapUiTinyMarginBegin">
-                                            <Button id="buttonSave" text="Save" visible="{oproPerty>/saveMode}"  press=".onButtonPress('save')"/>
+                                            <Button id="buttonSave" text="Save" visible="{oProPerty>/saveMode}"  press=".onButtonPress('save')"/>
                                         </HBox>
                                         <HBox width="4em" class="sapUiTinyMarginBegin">    
-                                            <Button id="buttonDelete" text="Delete" visible="{oproPerty>/deleteMode}"  press=".onButtonPress('delete')"/>
+                                            <Button id="buttonDelete" text="Delete" visible="{oProPerty>/deleteMode}"  press=".onButtonPress('delete')"/>
                                         </HBox>
                                     </HBox>
                                 </VBox>
